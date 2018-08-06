@@ -46,11 +46,11 @@ hr.star-light:after {
 }
 
 hr.star-dark {
-  border-color: #2C3E50;
+  border-color: #F0894B;
 }
 
 hr.star-dark:after {
-  color: #2C3E50;
+  color: #F0894B;
   background-color: white;
 }
 
@@ -117,7 +117,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #18BC9C;
+  color: #438542;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -125,7 +125,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #18BC9C;
+  color: #438542;
 }
 
 #mainNav .navbar-toggler {
@@ -152,11 +152,11 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #18BC9C;
+    background: #438542;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #18BC9C;
+    background: #438542;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -315,7 +315,7 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  color: #438542;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -325,7 +325,7 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2C3E50;
+  background-color: #F0894B;
   color: #fff;
 }
 
@@ -334,11 +334,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #18BC9C;
+  color: #438542;
 }
 
 a:focus, a:hover, a:active {
-  color: #128f76;
+  color: #438542;
 }
 
 .btn {
@@ -346,37 +346,136 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background-color: #18BC9C !important;
+  background-color: #dee2e6 !important;
 }
 
 .bg-secondary {
-  background-color: #2C3E50 !important;
+  background-color: #F0894B !important;
 }
 
 .text-primary {
-  color: #18BC9C !important;
+  color: #438542 !important;
 }
 
 .text-secondary {
-  color: #2C3E50 !important;
+  color: #F0894B !important;
 }
 
 .btn-primary {
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background-color: #438542;
+  border-color: #438542;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #128f76;
-  border-color: #128f76;
+  background-color: #438542;
+  border-color: #438542;
 }
 
 .btn-secondary {
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background-color: #F0894B;
+  border-color: #F0894B;
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: #1a252f;
   border-color: #1a252f;
+}
+
+
+/* Login  */
+.log-in{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+/* Image Logo */
+#resize {
+  max-width:70%;
+  max-height:70%;
+}
+
+.jumbotron{
+  background-color: #212359;
+  box-shadow: 2px -2px 41px 0px rgba(0,0,0,0.75);
+}
+
+/* Form login */
+.form-control{
+  max-width: 50%;
+  margin: auto; 
+}
+
+.mm{
+max-width: 350px;
+margin: 20px;
+}
+
+.cent{
+  margin: auto; 
+}
+
+
+/* Custom dropdown */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px; /* demo only */
+}
+
+.custom-dropdown select {
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: inherit;
+  padding: .5em;
+  padding-right: 2.5em;	
+  border: 0;
+  margin: 0;
+  border-radius: 3px;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -webkit-appearance: button; /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.custom-dropdown::after { /*  Custom dropdown arrow */
+  content: "\25BC";
+  height: 1em;
+  font-size: .625em;
+  line-height: 1;
+  right: 1.2em;
+  top: 50%;
+  margin-top: -.5em;
+}
+
+.custom-dropdown::before { /*  Custom dropdown arrow cover */
+  width: 2em;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.custom-dropdown select[disabled] {
+  color: rgba(0,0,0,.3);
+}
+
+.custom-dropdown select[disabled]::after {
+  color: rgba(0,0,0,.1);
+}
+
+.custom-dropdown::before {
+  background-color: rgba(0,0,0,.15);
+}
+
+.custom-dropdown::after {
+  color: rgba(0,0,0,.4);
 }
